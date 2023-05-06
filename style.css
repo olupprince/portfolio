@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    /* overflow: hidden; */
+    background-color: #f3f5f8;
+}
+.container {
+    width: 100%;
+    min-height: 10vh;
+    /* background-color: #8176AF; */
+    background-color: #f3f5f8;
+}
+body.active {
+    background-color: #3d535f;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 5rem;
+    line-height: 5rem;
+    z-index: 111;
+    /* background-color: red; */
+}
+.logo {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #3d535f;
+    letter-spacing: .1875rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+.f-stop {
+    font-size: 5rem;
+    color: #FC766A;
+}
+.nav-items {
+    display: flex;
+}
+.nav-items li {
+    list-style: none;
+    margin: 0 .9375rem;
+}
+.nav-items li a {
+    font-size: 1.5625rem;
+    color: #3d535f;
+    letter-spacing: .1875rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nav-items li:hover a{
+    color: #FC766A;
+}
+.links a{
+    font-size: 40px;
+    color: #3d535f;
+    margin: 1.5625rem .625rem;
+
+}
+.links a:hover{
+    color: #FC766A;
+}
+.container2 {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.container2::before {
+    position: absolute;
+    content: '';
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: -10%;
+    top: 100%;
+    background: linear-gradient(45deg, #FC766A, pink);
+    animation: object1 6s linear infinite;
+}.
+/* @keyframes object1 {
+    50%{
+        left: -13%;
+        top: -41%;
+    }
+} */
+.cont {
+    width: 50%;
+}
+.cont2 {
+    z-index: 5;
+}
+.heading {
+    display: block;
+    position: relative;
+    font-size: 2.1875rem;
+    letter-spacing: .3125rem;
+    color: #3d535f;
+}
+.heading::after {
+    position: absolute;
+    content: '';
+    height: .25rem;
+    height: .25rem;
+    width: 2.8125rem;
+    bottom: .625rem;
+    background-color: #FC766A;
+}
+h1 {
+    display: block;
+    font-size: 7rem;
+    font-weight: 900;
+    color: #3d535f;
+}
+.secondtext {
+    color: #FC766A;
+    text-transform: capitalize;
+}
+.first-paragraph {
+    display: block;
+    width: 90%;
+    font-size: .875rem;
+    color: #000;
+    font-weight: 500;
+}
+.btn {
+    width: 100%;
+    position: relative;
+    left: 9.375rem;
+}
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5625rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: .5rem .875rem;
+    margin: 40px 5px;
+    letter-spacing: .125rem;
+    text-transform: capitalize;
+    box-shadow: 0 .9375rem .625rem rgb(0, 0, 0,0.4);
+}
+button:hover {
+   background-color: #FC766A;
+}
+.imgbox {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 80px);
+    
+
+}
+.imgbox img {
+    position: relative;
+    height: 100%;
+    width: calc(130% - 100px);
+    top: -50px;
+    left: 50px;
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser {
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+}
+.imgbox #splashh {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    50%{
+        top: 49px;
+        left: 51px;
+        width: 155%;
+    }
+}
